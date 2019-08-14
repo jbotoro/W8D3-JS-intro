@@ -1,4 +1,4 @@
-Array.prototype.uniq =  function() {
+Array.prototype.uniq = function() {
   let uniqArr = [];
 
   this.forEach( ele => {
@@ -19,14 +19,14 @@ Array.prototype.twoSum = function() {
       }
     }
   }
-
+  
   return pairs;
 };
 
 Array.prototype.transpose = function() {
   const transposed = [];
 
-  for ( let col = 0; col < this[0].length; col++) {
+  for (let col = 0; col < this[0].length; col++) {
       let subarr = [];
       for ( let row = 0; row < this.length; row++) {
         subarr.push(this[row][col]);
@@ -35,3 +35,4 @@ Array.prototype.transpose = function() {
   }
   return transposed;
 };
+
